@@ -1,0 +1,30 @@
+{
+  "name": "my-lib",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "yarn build --watch --preserveWatchOutput",
+    "lint": "eslint src --ext js,ts",
+    "test": "jest"
+  },
+  "author": "Manuel Rodriguez",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/preset-env": "^7.12.16",
+    "@babel/preset-typescript": "^7.12.16",
+    "@microsoft/api-documenter": "^7.12.7",
+    "@microsoft/api-extractor": "^7.13.1",
+    "@types/jest": "^26.0.20",
+    "@typescript-eslint/eslint-plugin": "^4.15.1",
+    "@typescript-eslint/parser": "^4.15.1",
+    "eslint": "^7.20.0",
+    "jest": "^26.6.3",
+    "typescript": "^4.1.5"
+  },
+  "volta": {
+    "node": "14.15.5",
+    "yarn": "1.22.10"
+  }
+}
